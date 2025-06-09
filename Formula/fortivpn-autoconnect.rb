@@ -1,8 +1,8 @@
 class FortivpnAutoconnect < Formula
   desc "🚀 Automated FortiVPN connection with 2FA OTP extraction from Messages app"
   homepage "https://github.com/ATMasoumi/fortivpn-autoconnect"
-  url "https://github.com/ATMasoumi/fortivpn-autoconnect/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "135c4feb78e0f54c6a14c24c810c9a8ac585ac7dfbb62c7292583bd1b734652a"
+  url "https://github.com/ATMasoumi/fortivpn-autoconnect/archive/refs/tags/v1.5.0.tar.gz"
+  sha256 "2f21e556a8b8153a599f976aa55c6fe545ebc48a274282927371098b48f2b345"
   license "MIT"
 
   depends_on "openfortivpn"
