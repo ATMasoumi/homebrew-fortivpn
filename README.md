@@ -33,6 +33,8 @@ FortiVPN Auto-Connect transforms your VPN connection experience from a complex m
 After installation:
 ```bash
 # Connect to VPN
+forti
+# or
 fortivpn-autoconnect
 
 # Check status

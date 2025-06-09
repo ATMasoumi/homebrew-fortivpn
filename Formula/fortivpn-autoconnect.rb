@@ -1,8 +1,8 @@
 class FortivpnAutoconnect < Formula
   desc "🚀 Automated FortiVPN connection with 2FA OTP extraction from Messages app"
   homepage "https://github.com/ATMasoumi/fortivpn-autoconnect"
-  url "https://github.com/ATMasoumi/fortivpn-autoconnect/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "04ba44664f6206ecf20664a0e283c5dc93f9d5907d98a5851bf49ebdad82b31e"
+  url "https://github.com/ATMasoumi/fortivpn-autoconnect/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "135c4feb78e0f54c6a14c24c810c9a8ac585ac7dfbb62c7292583bd1b734652a"
   license "MIT"
 
   depends_on "openfortivpn"
@@ -10,6 +10,7 @@ class FortivpnAutoconnect < Formula
 
   def install
     bin.install "forti_connect.sh" => "fortivpn-autoconnect"
+    bin.install "forti"
     bin.install "fortivpn-setup"
     bin.install "get_otp_code.scpt"
     etc.install "forticonfig.template"
@@ -24,7 +25,7 @@ class FortivpnAutoconnect < Formula
       To get started:
         1. Run: fortivpn-setup
         2. Follow the interactive setup wizard
-        3. Connect with: fortivpn-autoconnect
+        3. Connect with: forti (or fortivpn-autoconnect)
 
       Required permissions:
         - Touch ID for sudo (recommended)
